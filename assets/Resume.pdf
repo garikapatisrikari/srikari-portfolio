@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script type="module" src="/@vite/client"></script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Srikari Garikapati — Build • Analyze • Create • Grow</title>
+<meta name="description" content="The portfolio of Sri Sai Prasanna Srikari Garikapati — full stack developer, data analyst and IoT enthusiast.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+<!-- Progress bar -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- NAV -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#top" class="logo"><span class="logo-dot"></span>SG</a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#technologies">Technologies</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="#contact" class="btn btn-primary btn-sm">Hire me <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H9M17 7V15" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about">About</a>
+    <a href="#technologies">Technologies</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="hero-visual">
+    <div class="hero-photo-wrap" id="heroPhotoWrap">
+      <img src="/assets/hero-photo.jpg" alt="Srikari Garikapati at her desk" class="hero-photo" id="heroPhoto">
+      <video class="hero-video" id="heroVideo" preload="metadata" playsinline>
+        <source src="/assets/hero-intro.mp4" type="video/mp4">
+      </video>
+      <button class="play-btn" id="playBtn" type="button" aria-label="Play introduction" title="Play introduction" aria-pressed="false">
+        <svg class="play-icon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+        <svg class="pause-icon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M7 5h4v14H7zM13 5h4v14h-4z"/></svg>
+      </button>
+      <div class="float-chip chip-1">✧</div>
+      <div class="float-chip chip-2">✧</div>
+    </div>
+  </div>
+  <div class="hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow"><span class="eyebrow-line"></span>Computer Science (IoT) Undergraduate</p>
+      <p class="hero-hi">Hi, I'm Srikari <span class="sparkle">✦</span></p>
+      <h1 class="hero-name">
+        <span class="name-line1">Sri Sai Prasanna</span>
+        <span class="name-line2">Srikari Garikapati</span>
+      </h1>
+      <p class="hero-role"><span class="role-dot"></span>Full Stack Developer&nbsp; / &nbsp;Data Analyst</p>
+      <p class="hero-desc">I'm a Computer Science (IoT) undergraduate passionate about Full Stack Development, Data Analytics, and AI. I enjoy turning ideas into digital experiences, solving real-world problems, and transforming data into meaningful insights.</p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn btn-outline">Explore my work <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <a href="#contact" class="btn btn-primary">Hire me <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H9M17 7V15" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <a href="assets/Srikari_Garikapati_Resume.pdf" class="link-download" id="downloadResume" download="Srikari_Garikapati_Resume.pdf">Download resume <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 3V15M12 15L7 10M12 15L17 10M4 19H20" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+      <div class="hero-social">
+        <a href="https://github.com/garikapatisrikari" target="_blank" rel="noopener"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5A11.5 11.5 0 0 0 .5 12c0 5.1 3.29 9.4 7.86 10.94.57.1.78-.25.78-.55v-2.14c-3.2.7-3.88-1.35-3.88-1.35-.52-1.34-1.28-1.7-1.28-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.56-.29-5.26-1.28-5.26-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.5 3.18-1.18 3.18-1.18.63 1.6.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.43-2.7 5.4-5.28 5.69.42.36.78 1.07.78 2.16v3.2c0 .3.21.66.79.55A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5Z"/></svg>GitHub</a>
+        <a href="https://www.linkedin.com/in/srikari-garikapati-9a6509291/" target="_blank" rel="noopener noreferrer"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.86 0-2.15 1.45-2.15 2.94v5.66H9.35V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.26 2.37 4.26 5.45v6.29ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg>LinkedIn</a>
+        <a href="mailto:garikapatisrikari@gmail.com"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>Email</a>
+      </div>
+    </div>
+  </div>
+  <button class="scroll-cue" id="scrollCue">Scroll to explore
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+</section>
+
+<!-- ABOUT -->
+<section class="section about" id="about">
+  <div class="section-inner about-grid">
+    <div class="about-media reveal">
+      <img src="/assets/about-photo.jpg" alt="Srikari Garikapati" class="about-photo">
+      <div class="about-tags">
+        <span>Profile / 2025</span>
+        <span>Andhra Pradesh</span>
+      </div>
+    </div>
+    <div class="about-copy reveal">
+      <p class="about-lead">I'm a Computer Science (IoT) undergraduate who enjoys building websites and digital experiences, solving real-world problems, and learning new technologies. My work sits at the intersection of full-stack development, data analytics and AI/ML.</p>
+      <p class="about-sub">With strong communication, interpersonal, presentation, leadership and teamwork skills, I enjoy connecting with people, understanding needs and helping ideas move forward.</p>
+      <div class="about-pillars">
+        <div class="pillar">
+          <span class="pillar-num">01</span>
+          <span class="pillar-title">Build</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H9M17 7V15"/></svg>
+        </div>
+        <div class="pillar">
+          <span class="pillar-num">02</span>
+          <span class="pillar-title">Analyze</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H9M17 7V15"/></svg>
+        </div>
+        <div class="pillar">
+          <span class="pillar-num">03</span>
+          <span class="pillar-title">Create</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H9M17 7V15"/></svg>
+        </div>
+        <div class="pillar">
+          <span class="pillar-num">04</span>
+          <span class="pillar-title">Grow</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H9M17 7V15"/></svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TECHNOLOGIES -->
+<section class="section technologies" id="technologies">
+  <div class="section-inner">
+    <p class="section-eyebrow reveal">02 / Technologies</p>
+    <h2 class="section-title reveal">Tools that turn intent into impact.</h2>
+    <p class="section-sub reveal">A practical toolkit built across interfaces, APIs, cloud infrastructure and data-driven experimentation.</p>
+    <div class="tech-pills reveal" id="techPills">
+      <span class="pill">Python</span>
+      <span class="pill">JavaScript</span>
+      <span class="pill">C</span>
+      <span class="pill">HTML5</span>
+      <span class="pill">CSS3</span>
+      <span class="pill">React.js</span>
+      <span class="pill">Node.js</span>
+      <span class="pill">FastAPI</span>
+      <span class="pill">AWS EC2</span>
+      <span class="pill">Linux</span>
+      <span class="pill">SSH</span>
+      <span class="pill">Git</span>
+      <span class="pill">GitHub</span>
+      <span class="pill">VS Code</span>
+      <span class="pill">Microsoft Excel</span>
+      <span class="pill">SQL</span>
+      <span class="pill">Machine Learning</span>
+      <span class="pill">Pandas</span>
+      <span class="pill">NumPy</span>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="section skills" id="skills">
+  <div class="section-inner">
+    <p class="section-eyebrow reveal">03 / Skills</p>
+    <h2 class="section-title reveal">A spectrum of ways to make things work.</h2>
+    <p class="section-sub reveal">No percentage bars — just the capabilities I use to explore, build, communicate and keep learning.</p>
+    <div class="skills-grid">
+      <div class="skill-card reveal">
+        <div class="skill-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m8 6-6 6 6 6M16 6l6 6-6 6"/></svg></div>
+        <p class="skill-label"><span class="skill-line"></span>Development</p>
+        <div class="skill-tags">
+          <span>Python</span><span>JavaScript</span><span>C</span><span>HTML5</span><span>CSS3</span><span>React.js</span><span>Node.js</span><span>FastAPI</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M2 12h4M18 12h4M4.9 19.1l2.8-2.8M16.3 7.7l2.8-2.8"/></svg></div>
+        <p class="skill-label"><span class="skill-line"></span>Data &amp; AI</p>
+        <div class="skill-tags">
+          <span>Microsoft Excel</span><span>SQL</span><span>Machine Learning</span><span>Pandas</span><span>NumPy</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17.5 19a4.5 4.5 0 0 0 0-9 6 6 0 0 0-11.4-2A5 5 0 0 0 6.5 19h11Z"/></svg></div>
+        <p class="skill-label"><span class="skill-line"></span>Cloud</p>
+        <div class="skill-tags">
+          <span>AWS EC2</span><span>Linux</span><span>SSH</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m4 17 6-6-6-6M12 19h8"/></svg></div>
+        <p class="skill-label"><span class="skill-line"></span>Tools</p>
+        <div class="skill-tags">
+          <span>Git</span><span>GitHub</span><span>VS Code</span>
+        </div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8ZM23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+        <p class="skill-label"><span class="skill-line"></span>Professional Skills</p>
+        <div class="skill-tags">
+          <span>Communication</span><span>Interpersonal Skills</span><span>Presentation Skills</span><span>Leadership</span><span>Teamwork</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="section projects" id="projects">
+  <div class="section-inner">
+    <p class="section-eyebrow reveal">04 / Selected Work</p>
+    <h2 class="section-title reveal">My projects, in motion.</h2>
+    <p class="section-sub reveal">A progressive trail of experiments and solutions — from intelligent scheduling and networking to music, complaints and models.</p>
+  </div>
+  <div class="orbit-wrap reveal">
+    <div class="orbit-ring"></div>
+    <div class="orbit-hub">
+      <span class="orbit-hub-label">My</span>
+      <span class="orbit-hub-label accent">Projects</span>
+      <span class="orbit-hub-range">01 — 05</span>
+    </div>
+    <div class="orbit-card" style="--pos:1" data-project="0">
+      <span class="orbit-num">01</span>
+      <span class="orbit-cat">SIH · Intelligent Scheduling</span>
+      <h3>AI-Generated Classroom Timetable | SIH</h3>
+      <button class="view-details">View details <svg width="13" height="13" viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H9M17 7V15" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    </div>
+    <div class="orbit-card" style="--pos:2" data-project="1">
+      <span class="orbit-num">02</span>
+      <span class="orbit-cat">AI · Personalization</span>
+      <h3>Personalized Networking Assistant</h3>
+      <button class="view-details">View details <svg width="13" height="13" viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H9M17 7V15" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    </div>
+    <div class="orbit-card" style="--pos:3" data-project="2">
+      <span class="orbit-num">03</span>
+      <span class="orbit-cat">Full Stack · Resolve</span>
+      <h3>Resolve-Now</h3>
+      <button class="view-details">View details <svg width="13" height="13" viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H9M17 7V15" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    </div>
+    <div class="orbit-card" style="--pos:4" data-project="3">
+      <span class="orbit-num">04</span>
+      <span class="orbit-cat">Music · Machine Learning</span>
+      <h3>AI-Powered Music Recognition App</h3>
+      <button class="view-details">View details <svg width="13" height="13" viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H9M17 7V15" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    </div>
+    <div class="orbit-card" style="--pos:5" data-project="4">
+      <span class="orbit-num">05</span>
+      <span class="orbit-cat">Data · Classification</span>
+      <h3>Iris Flower Classification</h3>
+      <button class="view-details">View details <svg width="13" height="13" viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H9M17 7V15" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECT MODAL -->
+<div class="modal-overlay" id="modalOverlay" aria-hidden="true">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button class="modal-close" id="modalClose" aria-label="Close">&times;</button>
+    <div class="modal-top">
+      <span class="modal-num" id="modalNum">01</span>
+      <span class="modal-cat" id="modalCat">Category</span>
+    </div>
+    <h3 id="modalTitle">Project title</h3>
+    <p id="modalDesc">Description</p>
+    <div class="modal-block">
+      <p class="modal-label"><span class="skill-line"></span>Key Functionality</p>
+      <p id="modalFunc">Key functionality text</p>
+    </div>
+    <div class="modal-block">
+      <p class="modal-label"><span class="skill-line"></span>Technologies</p>
+      <div class="modal-tags" id="modalTags"></div>
+    </div>
+    <button class="btn btn-outline modal-close-btn">Close</button>
+  </div>
+</div>
+
+<!-- EXPERIENCE -->
+<section class="section experience" id="experience">
+  <div class="section-inner">
+    <p class="section-eyebrow reveal">05 / Experience</p>
+    <h2 class="section-title reveal">Learning by doing, leading and shipping.</h2>
+    <p class="section-sub reveal">Each experience shaped how I collaborate, communicate and build with intention.</p>
+    <div class="timeline">
+      <div class="timeline-line"></div>
+      <div class="timeline-item left reveal">
+        <div class="timeline-dot"><span>01</span></div>
+        <div class="timeline-card">
+          <p class="timeline-cat"><span class="skill-line"></span>Full Stack Development</p>
+          <h3>Smartbridge — MERN Stack Developer Intern</h3>
+          <p>Led a team of 4 members to develop a full-stack complaint management platform. Developed a full-stack web application using React.js, Node.js, Express.js, and MongoDB. Built REST APIs and implemented secure user authentication.</p>
+        </div>
+      </div>
+      <div class="timeline-item right reveal">
+        <div class="timeline-dot"><span>02</span></div>
+        <div class="timeline-card">
+          <p class="timeline-cat"><span class="skill-line"></span>Cloud Infrastructure</p>
+          <h3>AWS Cloud Computing &amp; DevOps Intern</h3>
+          <p>Deployed Linux servers on AWS EC2 with secure SSH access. Configured cloud infrastructure, networking, and firewall settings.</p>
+        </div>
+      </div>
+      <div class="timeline-item left reveal">
+        <div class="timeline-dot"><span>03</span></div>
+        <div class="timeline-card">
+          <p class="timeline-cat"><span class="skill-line"></span>Data &amp; Models</p>
+          <h3>Data Analytics Intern</h3>
+          <p>Performed data analysis and visualization using Python, Excel, Pandas, NumPy, and Machine Learning. Built Logistic Regression, KNN, and Decision Tree models for Iris dataset classification.</p>
+        </div>
+      </div>
+      <div class="timeline-item right reveal">
+        <div class="timeline-dot"><span>04</span></div>
+        <div class="timeline-card">
+          <p class="timeline-cat"><span class="skill-line"></span>Generative AI</p>
+          <h3>Google Cloud Generative AI</h3>
+          <p>Gaining practical experience in Generative AI and Google Cloud technologies. Applied AI concepts and cloud tools to build intelligent, real-world applications in a collaborative environment.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section class="section education" id="education">
+  <div class="section-inner">
+    <p class="section-eyebrow reveal">06 / Education</p>
+    <h2 class="section-title reveal">The foundation beneath the work.</h2>
+    <p class="section-sub reveal">A steady learning path in Computer Science (IoT), data, systems and the human side of technology.</p>
+    <div class="edu-list">
+      <div class="edu-card reveal">
+        <div class="edu-icon">🎓</div>
+        <div class="edu-body">
+          <p class="edu-meta"><span class="skill-line"></span>2023 – 2027&nbsp; / &nbsp;CGPA: 8.05</p>
+          <h3>B.Tech — Computer Science (IoT)</h3>
+          <p>Aditya College of Engineering &amp; Technology · Surampalem, Andhra Pradesh</p>
+        </div>
+        <span class="edu-num">01</span>
+      </div>
+      <div class="edu-card reveal">
+        <div class="edu-icon">📚</div>
+        <div class="edu-body">
+          <p class="edu-meta"><span class="skill-line"></span>2021 – 2023&nbsp; / &nbsp;89.1%</p>
+          <h3>Intermediate</h3>
+          <p>Narayana Jr. College</p>
+        </div>
+        <span class="edu-num">02</span>
+      </div>
+      <div class="edu-card reveal">
+        <div class="edu-icon">🏅</div>
+        <div class="edu-body">
+          <p class="edu-meta"><span class="skill-line"></span>2021&nbsp; / &nbsp;97.33%</p>
+          <h3>School</h3>
+          <p>LBC High School</p>
+        </div>
+        <span class="edu-num">03</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CREDENTIALS -->
+<section class="section credentials" id="credentials">
+  <div class="section-inner">
+    <p class="section-eyebrow reveal">07 / Credentials</p>
+    <h2 class="section-title reveal">Proof points, kept personal.</h2>
+    <p class="section-sub reveal">The certifications and moments of leadership that continue to shape my trajectory.</p>
+    <div class="credentials-grid">
+      <div class="cert-card reveal">
+        <p class="cert-heading"><span class="cert-icon">🏆</span><span class="skill-line"></span>Certifications</p>
+        <ul class="cert-list">
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg>MERN Full Stack Development – Smartbridge</li>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg>AWS Cloud Computing &amp; DevOps</li>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg>HTML Certification</li>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg>CSS Certification</li>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg>C Programming Certification</li>
+        </ul>
+      </div>
+      <div class="achieve-card reveal">
+        <div class="achieve-banner">
+          <span class="achieve-banner-icon">✧</span>
+          <span>Lead / Make / Grow</span>
+        </div>
+        <p class="cert-heading"><span class="cert-icon">👥</span><span class="skill-line"></span>Leadership &amp; Achievements</p>
+        <div class="achieve-item">
+          <h4>Team Leader – Smartbridge Internship Project</h4>
+          <p>Led a 4-member team, coordinated development activities, and ensured timely project completion.</p>
+        </div>
+        <div class="achieve-item">
+          <h4>Participant – Smart India Hackathon</h4>
+          <p>Collaborated with a team to develop innovative solutions under time constraints.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section contact" id="contact">
+  <div class="section-inner contact-grid">
+    <div class="contact-copy reveal">
+      <p class="section-eyebrow">08 / Contact</p>
+      <h2 class="contact-title">Let's build something meaningful together.</h2>
+      <p class="section-sub">Thanks for visiting my portfolio. If you have a thoughtful project, opportunity, or just want to say hello, my inbox is open.</p>
+      <div class="contact-list">
+        <a href="mailto:garikapatisrikari@gmail.com" class="contact-row">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+          garikapatisrikari@gmail.com
+        </a>
+        <a href="https://github.com/garikapatisrikari" target="_blank" rel="noopener" class="contact-row">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5A11.5 11.5 0 0 0 .5 12c0 5.1 3.29 9.4 7.86 10.94.57.1.78-.25.78-.55v-2.14c-3.2.7-3.88-1.35-3.88-1.35-.52-1.34-1.28-1.7-1.28-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.56-.29-5.26-1.28-5.26-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.5 3.18-1.18 3.18-1.18.63 1.6.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.43-2.7 5.4-5.28 5.69.42.36.78 1.07.78 2.16v3.2c0 .3.21.66.79.55A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5Z"/></svg>
+          GitHub <svg class="ext" width="13" height="13" viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H9M17 7V15" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/srikari-garikapati-9a6509291/" target="_blank" rel="noopener noreferrer" class="contact-row">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.86 0-2.15 1.45-2.15 2.94v5.66H9.35V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.26 2.37 4.26 5.45v6.29ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg>
+          LinkedIn <svg class="ext" width="13" height="13" viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H9M17 7V15" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="contact-form-wrap reveal">
+      <p class="form-eyebrow"><span class="skill-line"></span>Send a note <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></p>
+      <h3>Start a conversation.</h3>
+      <form id="contactForm">
+        <div class="form-row">
+          <div class="form-field">
+            <label>First name</label>
+            <input type="text" placeholder="First name" required>
+          </div>
+          <div class="form-field">
+            <label>Last name</label>
+            <input type="text" placeholder="Last name" required>
+          </div>
+        </div>
+        <div class="form-field">
+          <label>Email</label>
+          <input type="email" placeholder="you@example.com" required>
+        </div>
+        <div class="form-field">
+          <label>Message</label>
+          <textarea rows="4" placeholder="Tell me about what you are building..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Send message <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M7 17L17 7M17 7H9M17 7V15" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <p class="form-success" id="formSuccess">Thanks! Your message has been noted — I'll get back to you soon.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+    <p class="footer-eyebrow"><span class="footer-line"></span>Closing Credits</p>
+    <h2 class="footer-name">
+      <span>Sri Sai Prasanna</span>
+      <span class="accent">Srikari Garikapati</span>
+    </h2>
+    <div class="footer-bottom">
+      <nav class="footer-nav">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="footer-social">
+        <a href="https://github.com/garikapatisrikari" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/srikari-garikapati-9a6509291/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="mailto:garikapatisrikari@gmail.com">Email</a>
+      </div>
+      <p class="footer-copy">© 2026 Srikari Garikapati. Built &amp; analyzed &amp; created &amp; grown.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="/script.js"></script>
+</body>
+</html>
